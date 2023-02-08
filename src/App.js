@@ -4,16 +4,14 @@ import Homepage from './pages/homepage';
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={<Homepage />}
-      />
-      <Route
-        path="/details/:id/"
-        element={<AnimeCard />}
-      />
-    </Routes>
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={<Homepage />}
+        />
+      </Routes>
+    </>
   );
 }
 
