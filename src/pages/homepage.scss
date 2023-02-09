@@ -1,5 +1,58 @@
- header {
-    h1 {
-        color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+$base-color: rgb(236, 81, 210);
+$base-color-black: rgb(141, 54, 126);
+$base-color-separator: rgb(181, 70, 185);
+
+header {
+  height: 6rem;
+  font-family: 'Lato', sans-serif;
+  background-color: $base-color;
+  text-align: right;
+  padding: 3rem 2rem;
+  color: white;
+  font-size: 1.1rem;
+
+  h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+  }
+}
+
+section {
+  background-color: $base-color-separator;
+
+  h2 {
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      color: white;
+      max-width: 50vw;
+      min-width: 50vw;
+      aspect-ratio: 1/1;
     }
- }
+
+    li:nth-child(4n+1) {
+      background-color: $base-color;
+    }
+
+    li:nth-child(4n+2) {
+      background-color: $base-color-black;
+    }
+
+    li:nth-child(4n+3) {
+      background-color: $base-color-black;
+    }
+
+    li:nth-child(4n+4) {
+      background-color: $base-color;
+    }
+  }
+}

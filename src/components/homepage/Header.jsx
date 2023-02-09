@@ -7,6 +7,7 @@ const Header = ({ topAnime }) => (
       Top Anime
     </h1>
     {topAnime.pagination.items.count}
+    &nbsp;most view animes
   </header>
 );
 

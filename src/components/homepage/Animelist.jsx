@@ -4,6 +4,9 @@ import Anime from './Anime';
 
 const Animelist = ({ topAnime }) => (
   <section>
+    <h2>
+      TOP ANIME LIST BY VIEWS
+    </h2>
     <ul>
       <Anime topAnimeData={topAnime.data} />
     </ul>
