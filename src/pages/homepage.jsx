@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchAnime } from '../features/homepage/animes.slice';
 import Header from '../components/homepage/Header';
 import Animelist from '../components/homepage/Animelist';
+import './homepage.scss';
 
 const Homepage = () => {
   const dispatch = useDispatch();
