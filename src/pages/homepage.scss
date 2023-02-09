@@ -38,6 +38,9 @@ section {
       max-width: 50vw;
       min-width: 50vw;
       aspect-ratio: 1/1;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
 
       h3 {
         text-align: center;
@@ -45,9 +48,22 @@ section {
         font-size: 0.7rem;
         font-weight: bold;
       }
+
       .forward {
         font-size: 2rem;
+        background-color: inherit;
+        align-self: flex-end;
+        padding-right: 0.1rem;
       }
+
+      p {
+        margin-top: auto;
+        text-align: end;
+        font-weight: bold;
+        font-size: 0.7rem;
+        padding-right: 0.5rem;
+      }
+      
     }
 
     li:nth-child(4n+1) {

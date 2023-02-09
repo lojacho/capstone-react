@@ -2,22 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 
-const Anime = ({ topAnimeData }) => (
-  topAnimeData.map((anime) => (
-    <li
-      key={anime.mal_id}
-      style={{
-        backgroundImage: `url(${anime.images.jpg.large_image_url})`,
-        backgroundSize: '70% 70%',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'top 1.4rem left 0.5rem',
-      }}
-    >
-      <h3>{anime.title}</h3>
-      <div className="forward"><IoArrowForwardCircleOutline /></div>
-    </li>
-  ))
-);
+const Anime = ({ topAnimeData }) => {
+  const detailHandler = (id) => console.log(id);
+  const styleUser = { color: 'white' };
+  return (
+    topAnimeData.map((anime) => (
+      <li
+        key={anime.mal_id}
+        style={{
+          backgroundImage: `url(${anime.images.jpg.large_image_url})`,
+          backgroundSize: '70% 70%',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top 1.4rem left 0.5rem',
+        }}
+      >
+        <h3>{anime.title}</h3>
+        <button
+          className="forward"
+          type="button"
+          onClick={() => detailHandler(anime.mal_id)}
+        >
+          <IoArrowForwardCircleOutline style={styleUser} />
+        </button>
+        <p>{anime.rating}</p>
+      </li>
+    ))
+  );
+};
 
 Anime.propTypes = {
   topAnimeData: PropTypes.arrayOf(PropTypes.shape({
