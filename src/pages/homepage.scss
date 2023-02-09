@@ -4,11 +4,11 @@ $base-color-black: rgb(141, 54, 126);
 $base-color-separator: rgb(181, 70, 185);
 
 header {
-  height: 6rem;
+  height: 4rem;
   font-family: 'Lato', sans-serif;
   background-color: $base-color;
   text-align: right;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   color: white;
   font-size: 1.1rem;
 
@@ -31,12 +31,23 @@ section {
   ul {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
     li {
       color: white;
       max-width: 50vw;
       min-width: 50vw;
       aspect-ratio: 1/1;
+
+      h3 {
+        text-align: center;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+        font-weight: bold;
+      }
+      .forward {
+        font-size: 2rem;
+      }
     }
 
     li:nth-child(4n+1) {
