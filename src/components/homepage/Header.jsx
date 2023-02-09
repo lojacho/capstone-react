@@ -1,20 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({ topAnime }) => {
-  console.log(topAnime);
-  return (
-    <div>
-      <h1>
-        Top Anime
-      </h1>
-      {topAnime.pagination.items.count}
-    </div>
-  );
-};
+const Header = ({ topAnime }) => (
+  <header>
+    <h1>
+      Top Anime
+    </h1>
+    {topAnime.pagination.items.count}
+  </header>
+);
 
 Header.propTypes = {
-  topAnime: PropTypes.objectOf(PropTypes.object()).isRequired,
+  topAnime: PropTypes.shape({
+    pagination: PropTypes.shape({
+      items: PropTypes.shape({
+        count: PropTypes.number.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default Header;

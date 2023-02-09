@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAnime } from '../features/homepage/animes.slice';
 import Header from '../components/homepage/Header';
+import Animelist from '../components/homepage/Animelist';
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const Homepage = () => {
     tobeDisplay = (
       <main>
         <Header topAnime={topAnime} />
+        <Animelist topAnime={topAnime} />
       </main>
     );
   } else if (animeLoading === 'failed') {
