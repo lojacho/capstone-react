@@ -8,7 +8,7 @@ const mapStateToProps = (state) => ({
 const AnimeDetailNotConectect = ({ topAnime }) => {
   const { index } = useParams();
   console.log(index, 'Index coming from URL');
-  console.log(topAnime, 'anime detail');
+  console.log(topAnime.topAnime.data[index], 'anime detail');
   return (
     <div>
       Perfil del Usuario
