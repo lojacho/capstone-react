@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 
 const Anime = ({ topAnimeData }) => {
-  const detailHandler = (id) => console.log(id);
   const styleUser = { color: 'white' };
   return (
-    topAnimeData.map((anime) => (
+    topAnimeData.map((anime, index) => (
       <li
         key={anime.mal_id}
         style={{
@@ -17,13 +17,13 @@ const Anime = ({ topAnimeData }) => {
         }}
       >
         <h3>{anime.title}</h3>
-        <button
+
+        <Link
+          to={`/anime/${index}`}
           className="forward"
-          type="button"
-          onClick={() => detailHandler(anime.mal_id)}
         >
           <IoArrowForwardCircleOutline style={styleUser} />
-        </button>
+        </Link>
         <p>{anime.rating}</p>
       </li>
     ))
