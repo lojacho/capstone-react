@@ -17,7 +17,7 @@ $base-color-separator: rgb(181, 70, 185);
 
     h2 {
       font-size: 1.5rem;
-      padding-top: 0rem;
+      padding-top: 0;
       margin-top: -1.5rem;
     }
   }
@@ -42,7 +42,6 @@ $base-color-separator: rgb(181, 70, 185);
       display: flex;
       flex-direction: row;
       align-items: center;
-
       gap: 0.8rem;
 
       p {
@@ -55,7 +54,7 @@ $base-color-separator: rgb(181, 70, 185);
       }
 
       .smallBack {
-        padding: 0 1rem
+        padding: 0 1rem;
       }
     }
 
