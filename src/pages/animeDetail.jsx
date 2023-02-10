@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => ({
@@ -10,12 +11,20 @@ const AnimeDetailNotConectect = ({ topAnime }) => {
   console.log(index, 'Index coming from URL');
   console.log(topAnime.topAnime.data[index], 'anime detail');
   return (
-    <div>
+    <main>
       Perfil del Usuario
-    </div>
+    </main>
   );
 };
 
 const AnimeDetail = connect(mapStateToProps)(AnimeDetailNotConectect);
+
+AnimeDetailNotConectect.propTypes = {
+  topAnime: PropTypes.shape({
+    topAnime: PropTypes.shape({
+      data: PropTypes.arrayOf.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
 
 export default AnimeDetail;
