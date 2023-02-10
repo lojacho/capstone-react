@@ -42,9 +42,20 @@ $base-color-separator: rgb(181, 70, 185);
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      gap: 0.8rem;
+
       p {
         margin: 0;
-        padding: 0;
+        padding: 0 1rem;
+      }
+
+      div {
+        margin-left: auto;
+      }
+
+      .smallBack {
+        padding: 0 1rem
       }
     }
 
