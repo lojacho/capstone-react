@@ -1,30 +1,17 @@
 import { useParams } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
+import Detaillist from '../components/animeDetail/Detaillist';
+import './animeDetail.scss';
 
-const mapStateToProps = (state) => ({
-  topAnime: state.topAnime,
-});
-
-const AnimeDetailNotConectect = ({ topAnime }) => {
+const AnimeDetail = () => {
   const { index } = useParams();
-  console.log(index, 'Index coming from URL');
-  console.log(topAnime.topAnime.data[index], 'anime detail');
+  const animeDetail = useSelector((state) => state.topAnime.topAnime.data[index]);
+
   return (
     <main>
-      Perfil del Usuario
+      <Detaillist animeDetail={animeDetail} />
     </main>
   );
-};
-
-const AnimeDetail = connect(mapStateToProps)(AnimeDetailNotConectect);
-
-AnimeDetailNotConectect.propTypes = {
-  topAnime: PropTypes.shape({
-    topAnime: PropTypes.shape({
-      data: PropTypes.arrayOf.isRequired,
-    }).isRequired,
-  }).isRequired,
 };
 
 export default AnimeDetail;
