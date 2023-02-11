@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="#" alt="logo" width="140"  height="auto" />
-  <h1><b>Spaces Travelers Hub</b></h1>
+  <h1><b>React Capstone</b></h1>
 </div>
 
 # 📗 Table of Contents
@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🎯 Spaces Travelers Hub<a name="about-project"></a>
+# 🎯 React Capstone<a name="about-project"></a>
 
 > In this project, we are working with the real live data from the [SpaceX API](https://api.spacexdata.com). Our task is to build a mobile web application to check a list of metrics and see the detail of those metrics. 
 
@@ -63,7 +63,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-This project is a simple spaces travelers hub. The main features are:
+This project is a simple React Capstone. The main features are:
 
 - **The home section displays a list of animes fetched from an API.**
 - **The URL for the detail page is created dinamic.**
