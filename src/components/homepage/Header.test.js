@@ -10,9 +10,9 @@ test('renders qty to be render', () => {
     pagination: {
       items: {
         count: 25,
-      }
+      },
     },
-  }
+  };
 
   const mockStore = configureStore();
   const store = mockStore(topAnime);

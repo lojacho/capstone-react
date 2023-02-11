@@ -17,12 +17,12 @@ describe('Detaillist component', () => {
     const { container } = render(
       <MemoryRouter>
         <Detaillist animeDetail={animeDetail} />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(container.querySelector('h2').textContent).toBe(animeDetail.title);
     expect(container.querySelector('.containerSection')).toHaveStyle(
-      'background-image: url(https://example.com/image.jpg)'
+      'background-image: url(https://example.com/image.jpg)',
     );
   });
 });
