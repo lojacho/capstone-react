@@ -31,7 +31,7 @@
 
 # 🎯 React Capstone<a name="about-project"></a>
 
-> In this project, we are working with the real live data from the [SpaceX API](https://api.spacexdata.com). Our task is to build a mobile web application to check a list of metrics and see the detail of those metrics. 
+> In this project, I worked with the real live data from [Jikan](https://api.jikan.moe/v4/top/anime) in order to build a mobile web application to check a list of metrics and see the detail of those metrics. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
