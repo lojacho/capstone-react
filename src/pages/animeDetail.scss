@@ -1,0 +1,76 @@
+$base-color: rgb(236, 81, 210);
+$base-color-black: rgb(141, 54, 126);
+$base-color-separator: rgb(181, 70, 185);
+
+.detailSection {
+  display: flex;
+  flex-direction: column;
+
+  .containerSection {
+    height: 4rem;
+    font-family: 'Lato', sans-serif;
+    background-color: $base-color;
+    text-align: right;
+    padding: 2rem 1rem 2rem 2rem;
+    color: white;
+    font-size: 1.1rem;
+
+    h2 {
+      font-size: 1.5rem;
+      padding-top: 0;
+      margin-top: -1.5rem;
+    }
+  }
+
+  .back {
+    font-size: 2rem;
+    background-color: inherit;
+    align-self: flex-end;
+    padding-right: 0.1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+
+    li {
+      max-width: 100vw;
+      min-width: 100vw;
+      max-height: 4rem;
+      min-height: 4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.8rem;
+
+      p {
+        margin: 0;
+        padding: 0 1rem;
+      }
+
+      div {
+        margin-left: auto;
+      }
+
+      .smallBack {
+        padding: 0 1rem;
+      }
+    }
+
+    li:nth-child(odd) {
+      background-color: $base-color-black;
+    }
+
+    li:nth-child(even) {
+      background-color: $base-color;
+    }
+  }
+
+  h3 {
+    background-color: $base-color-separator;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
