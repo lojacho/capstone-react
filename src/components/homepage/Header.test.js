@@ -17,6 +17,5 @@ test('renders qty to be render', () => {
   const mockStore = configureStore();
   const store = mockStore(topAnime);
   const component = render(<Provider store={store}><Header topAnime={topAnime} /></Provider>);
-  // since reserved is passing as true
   expect(component.container).toHaveTextContent(topAnime.pagination.items.count);
 });
