@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 
 const Anime = ({ topAnimeData }) => {
-  const styleUser = { color: 'white' };
+  const styleUser = { color: 'yellow' };
   return (
     topAnimeData.map((anime, index) => (
       <li
@@ -13,7 +13,8 @@ const Anime = ({ topAnimeData }) => {
           backgroundImage: `url(${anime.images.jpg.large_image_url})`,
           backgroundSize: '70% 70%',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'top 1.4rem left 0.5rem',
+          backgroundPosition: 'top 1.8rem left 1rem',
+          borderRadius: '0.3rem',
         }}
       >
         <h3>{anime.title}</h3>

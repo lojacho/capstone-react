@@ -4,10 +4,13 @@ import PropTypes from 'prop-types';
 const Header = ({ topAnime }) => (
   <header>
     <h1>
-      Top Anime
+      The Anime Hub
     </h1>
-    {topAnime.pagination.items.count}
-    &nbsp;most view animes
+    <hr className="separator" />
+    <p>
+      {topAnime.pagination.items.count}
+      &nbsp;most view animes
+    </p>
   </header>
 );
 

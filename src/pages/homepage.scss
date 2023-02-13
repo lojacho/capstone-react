@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
 $base-color: rgb(236, 81, 210);
 $base-color-black: rgb(141, 54, 126);
 $base-color-separator: rgb(181, 70, 185);
@@ -6,16 +7,32 @@ $base-color-separator: rgb(181, 70, 185);
 header {
   height: 4rem;
   font-family: 'Lato', sans-serif;
-  background-color: $base-color;
+  background: linear-gradient($base-color, $base-color-black);
   text-align: right;
   padding: 2rem 2rem;
   color: white;
   font-size: 1.1rem;
 
+
   h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: right;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 0.25rem;
+  }
+
+  .separator {
+    margin-bottom: 0.15rem;
+    border-top: 0.15rem solid black;
+    width: 50%;
+    margin-left: 50%;
+  }
+  p {
+    background-image: url(../../public/Assets/pink.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -25,22 +42,27 @@ section {
   h2 {
     color: white;
     font-size: 0.8rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.6rem;
   }
 
   ul {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    background-color: black;
+    padding: 0.1rem;
+    gap: 0.25rem;
+    justify-content: space-around;
 
     li {
-      color: white;
-      max-width: 50vw;
-      min-width: 50vw;
+      color: black;
+      max-width: 49vw;
+      min-width: 49vw;
       aspect-ratio: 1/1;
       display: flex;
       flex-direction: column;
-      padding-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      box-shadow: 0.1rem 0.1rem 0.5rem red;
 
       h3 {
         text-align: center;
@@ -53,7 +75,7 @@ section {
         font-size: 2rem;
         background-color: inherit;
         align-self: flex-end;
-        padding-right: 0.1rem;
+        padding-right: 0.15rem;
       }
 
       p {
@@ -62,6 +84,7 @@ section {
         font-weight: bold;
         font-size: 0.7rem;
         padding-right: 0.5rem;
+        color: white;
       }
     }
 
